@@ -2,7 +2,7 @@
 
 Rozwiązania zadań z przedmiotu *Bazy NoSQL*:
 
-Wybrany zbiór danych - [Earthquakes](https://earthquake.usgs.gov/)
+Wybrany zbiór danych - [Reddit comments from 15 days](https://www.reddit.com/r/datasets/comments/1mbsa2/155m_reddit_comments_over_15_days/)
 
 1. Zaliczenie:
  - [ ] EDA
