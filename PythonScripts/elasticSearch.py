@@ -18,5 +18,20 @@ x = collection.aggregate(
       { "$unwind" : "$subreddit"}, { "$sortByCount": "$subreddit" }
    ]
 )
+keys = []
+lista = []
+#print(list(x))
+for i in list(x):
+   a = {i[u"_id"].encode('utf-8'): i[u"count"]}
+   print a
+   lista.append(a)
+   keys.append(i[u"_id"].encode('utf-8'))
 
-print(list(x))
+
+
+with open('redditData.csv', 'wb') as output_file:
+   count = 100
+   for item in lista:
+      output_file.write("%s\n" % item)
+      count -= 1
+      if not count: break
