@@ -20,7 +20,30 @@ Informacje o komputerze na którym były wykonywane obliczenia:
 | Pamięć                | TODO |
 | Dysk                  | TODO |
 | Baza danych           | TODO |
+___________________
+Import danych do bazy Mongo ( komenda:)
 
+ ```Measure-Command{ .\mongoimport -d nosql -c reddit3 "C:\Users\Devest\Documents\reddit2.json" }```
+_______________
+
+Czas importu danych.
+
+
+|Time Type                          |  Time value                 |
+|---------------------------------|----------------------|
+| Minutes                         |  3                  |
+| Seconds                         |  2                  |
+| Milliseconds                    |  325                |
+| Ticks                           |  1823252719         |
+| TotalDays                       |  0,0021102462025463 |
+| TotalHours                      |  0,0506459088611111 |
+| TotalMinutes                    |  3,03875453166667   |
+| TotalSeconds                    | 182,3252719        |
+| TotalMilliseconds   |                    182325,2719  |
+
+<BR/>
+<BR/>
+<BR/>
 Informacje wyciągnięte z aggregation pipeline(MongoDB)
 
 | Subreddit            |  Liczba komentarzy |
